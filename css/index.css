@@ -1,0 +1,801 @@
+* {
+margin: 0;
+padding: 0;
+}
+a { 
+text-decoration: none !important;
+color: black;
+}
+span.xemthem,
+a.xemthem
+{
+    color: gray;
+    cursor: pointer;
+    font-style: italic;
+    position: relative;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+a.xemthem:hover {
+	text-decoration: none !important;
+/*	left: -50px;
+	transition: .3s ease-in-out;*/
+}
+
+p {
+margin: 0;
+}
+h2.title {
+	color: #0067b2;
+    font-weight: 900;
+    margin: 0;
+}
+button {
+    background: transparent;
+    border: 0;
+    /*outline: none;*/
+}
+button:focus {
+	outline: none
+}
+html, body {
+width: 100%;
+height: 100%;
+font-family: 'Lato', sans-serif;
+}
+#wrapper{
+overflow-x: hidden;
+}
+header{}
+nav.navbar-expand-lg {
+padding: 0;
+border-bottom: solid 2px gainsboro;
+}
+nav a.logoHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a.logoHeader:after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: -150px;
+    width: 230%;
+    height: 11px;
+    background: white;
+    transform: skewX(-40deg);
+    border: 2px solid gainsboro;
+    border-top: none;
+}
+nav .logo {padding-top: 5px;}
+nav ul .nav-item {position: relative;}
+nav ul .nav-item .nav-link {
+color: black;
+font-size: 15px;
+padding: 1rem .5rem;
+transition: .3s ease-in-out;
+}
+nav ul .nav-item:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background: black;
+	z-index: 999;
+	transition: .3s ease-in-out;
+}
+nav ul .nav-item:hover:after {width: 100%;}
+nav ul .nav-item:hover .nav-link {color: #295a94;}
+nav div#navbarNav {justify-content: flex-end;}
+nav .languege {display: flex;}
+nav .languege > .phone {
+display: flex;
+margin: 0 20px;
+}
+nav .languege > .phone > span {
+color: #eb4027;
+font-weight: 900;
+margin-top: 2px;
+}
+/*------------End css header---------------*/
+
+main{
+width: 100%;
+height: 100%;
+}
+main > section {
+	margin: 50px 0;
+}
+main section.banner {
+background-image: url('../images/bgBanner.png');
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+width: 100vw;
+height: 100vh;
+margin: 0;
+}
+main section.banner .content {
+flex-direction: column;
+align-items: center;
+position: absolute;
+top: 50%;
+transform: translateY(-10%);
+background: #ffffff8c;
+width: 100%;
+padding: 20px 0 10px;
+}
+section.banner .content .title h1 {
+margin: 0;
+text-align: left;
+font-weight: 900;
+font-style: italic;
+color: #295a94;
+text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+section.banner .content .title h1:last-child {text-align: right;}
+section.banner .content p {
+background: #ffffffcc;
+width: 100%;
+margin: 10px 0 20px;
+}
+/*end css banner*/
+main section.biquyet {
+}
+section.biquyet .row h3 {
+background: #4679b6;
+color: white;
+font-weight: 700;
+font-size: 23px;
+padding: 5px 0;
+text-align: center;
+margin: 31px 0 15px -18px;
+position: relative;
+}
+section.biquyet .row h3:after {
+content: '';
+position: absolute;
+top: 0;
+right: -8px;
+height: 100%;
+width: 20px;
+background: #4679b6;
+transform: skewX(20deg);
+}
+section.biquyet .row p {
+color: gray;
+margin-left: 20px;
+line-height: 39px;
+font-size: 14px;
+}
+section.biquyet .row p strong {
+color: black;
+opacity: .6;
+}
+/*end css bi quyet tang hieu suat*/
+
+main section.tongdaicloud {
+	background: #80808052;
+	padding: 40px 0 20px;
+}
+section.tongdaicloud h1 {
+	color: #295a94;
+	font-size: 28px;
+	font-weight: 900;
+}
+section.tongdaicloud p.text {
+	color: gray;
+}
+/*----------end css tongdaicloud-------------*/
+main section.cacbox {
+	/*margin-top: 50px;*/
+}
+section.cacbox .box {
+    padding: 0 7px;
+}
+section.cacbox .box img { height: 80px; }
+section.cacbox .box .box-text {
+	background: #d7d7d796;
+	color: #504e4e;
+	padding: 10px 3px;
+}
+section.cacbox .box h4 {
+	color: #295a94;
+	font-size: 18px;
+	font-weight: 900;
+}
+/*----------end css cacbox-------------*/
+main section.ungdungdesktop {
+	background: #80808052;
+	padding: 60px 0;
+}
+.ungdungdesktop .box-right {
+	position: relative;
+}
+.ungdungdesktop .box-right .row img {
+    box-shadow: 0 2px 7px 2px #0000007a;
+}
+.ungdungdesktop .box-right .row > img {
+	position: absolute;
+	left: 45%;
+    transform: translateX(-50%);
+    z-index: 999;
+    top: -30px;
+    box-shadow: 0 2px 13px black;
+}
+
+/*----------end css ungdungdesktop-------------*/
+
+main section.ungdungmobile {
+}
+.ungdungmobile .box-left, .ungdungdesktop .box-left {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ungdungmobile .box-left h2, .ungdungdesktop .box-left h2{
+	color: #0067b2;
+    font-weight: 900;
+    margin: 0;
+}
+.ungdungmobile .box-left h5, .ungdungdesktop .box-left h5 {
+	color: #0067b2;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.ungdungmobile .box-left a.bg-transparent {
+    position: relative;
+}
+.ungdungmobile .box-left a.bg-transparent img.text {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+.ungdungmobile .box-img {
+    display: flex;
+    justify-content: space-around;
+}
+/*----------end css ungdungmobile----------*/
+main .thietbi {
+	background: #dcdcdc;
+	padding: 30px 0;
+}
+/*----------end css thiet bi ----------*/
+main .products {
+
+}
+.products .box-img-text {
+    margin-bottom: 30px;
+}
+.products .box-img-text .img {
+    display: inline-block;
+}
+.products p.tieude {
+	color: #0067b2;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 10px;
+    padding: 0 !important;
+    font-size: 14px;
+}
+.products p.tieude:before {
+	display: none;
+}
+.products p.price {
+    background: #0067b2;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.products p.price span {
+    font-size: 14px;
+    position: relative;
+    top: -7px;
+}
+.products .chitiet {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: white;
+    box-shadow: -2px 2px 8px black;
+    padding: 10px 10px 25px;
+    width: auto;
+    text-align: left;
+    font-size: 12px;
+    display: none;
+}
+.products .chitiet p {
+	position: relative;
+	padding-left: 20px;
+}
+.products .chitiet p:before {
+	content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: gray;
+    border-radius: 20px;
+}
+.products .chitiet > i {
+	position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.products .box-img-text .chitiet div a.chat-mr {
+    background: #0067b2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 14px;
+}
+/*----------end css products ----------*/
+
+main .tablePrice {}
+.tablePrice .box-price {
+	box-shadow: 4px 2px 3px #00000073;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.tablePrice .row {
+	align-items: flex-end;
+}
+.tablePrice h2.title {
+	margin: 0 0 50px;
+}
+.tablePrice .box-price:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -63px;
+    width: 100px;
+    height: 45px;
+    background: #f9cd6e;
+    transform: skewX(60deg);
+    z-index: 1;
+}
+.tablePrice .box-price.center:before {
+	background: #2e758a;
+}
+.tablePrice .box-price.right:before {
+	background: seagreen;
+}
+.tablePrice .box-price h5 {
+    position: absolute;
+    background: #02020254;
+    width: 100%;
+    right: 0;
+    padding: 10px;
+    color: white;
+    font-weight: 800;
+}
+.tablePrice .box-price .price {
+    background: #f9cd6e;
+    padding-top: 30px;
+    color: #ffffff;
+    padding: 60px 0 10px;
+}
+.tablePrice .box-price.center .price {
+	background: #2e768b;
+}
+.tablePrice .box-price.center p.bg:last-child button {
+	background: #2e768b;
+}
+.tablePrice .box-price.right p.bg:last-child button {
+	background: seagreen;
+}
+.tablePrice .box-price.right .price {
+	background: seagreen;
+}
+.tablePrice .box-price .price h1 {
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+.tablePrice  .box-price.right .price h1 {
+    padding: 20px 0 25px;
+}
+.tablePrice .box-price p {
+	height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablePrice .box-price p.bg:last-child {
+	padding: 40px 0;
+}
+.tablePrice .box-price p.bg {
+	background: #8080803d;
+}
+.tablePrice .box-price p.bg button {
+	border: navajowhite;
+    background: #f9cd6e;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 2px 5px black;
+    outline: none;
+}
+/*----------end css .tablePrice ----------*/
+main .sosanh {  }
+.sosanh .contact {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 25px;
+}
+.sosanh .contact li {
+	padding: 10px 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+}
+.sosanh .contact li:first-child {
+    width: 60%;
+    background: #e1e1e1;
+    color: #2e758a;
+    transform: skewX(0deg);
+}
+.sosanh .contact li:nth-child(2) {
+    background: #f9cd6e;
+    z-index: 0;
+}
+.sosanh .contact li:nth-child(3) {
+    background: #2e758a;
+    z-index: 0;
+}
+.sosanh .contact li:last-child {
+    background: #478b57;
+    z-index: 1
+}
+.sosanh .contact li:nth-child(2):before,
+.sosanh .contact li:nth-child(3):before,
+.sosanh .contact li:last-child:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background: #f9cd6e;
+    top: 0;
+    left: -12px;
+    z-index: -1;
+    transform: skewX(40deg);
+}
+.sosanh .contact li:nth-child(3):before {
+    background: #2e7489;
+}
+.sosanh .contact li:last-child:before {
+    background: #478b57;
+}
+.sosanh .box-sosanh {
+	padding: 0 50px;
+}
+.sosanh .box-sosanh .text-the {
+	display: flex;
+	align-items: center;
+}
+.sosanh .box-sosanh p span:nth-child(2),
+.box-sosanh .text-the > span
+{
+    height: 3px;
+    width: 79%;
+    display: inline-block;
+    background-image: linear-gradient(to right, transparent, #a9a9a9bf);
+    border-radius: 20px;
+    position: relative;
+}
+.sosanh .box-sosanh p {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 72%;
+    margin: 10px 0;
+}
+.sosanh .box-sosanh p span:nth-child(2):before,
+.box-sosanh .text-the > span:before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #a2a2a2;
+    border-radius: 20px;
+}
+.sosanh .box-sosanh p span:nth-child(2):after,
+.box-sosanh .text-the > span:after
+{
+    content: '';
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    background: #f5b731;
+    border-radius: 20px;
+    z-index: 1;
+}
+.box-sosanh .text-the > span {
+	position: relative;
+    width: 277px;
+    background-image: linear-gradient(to right, #a9a9a9bf, transparent);
+}
+.box-sosanh .text-the > span:before {
+    top: -9px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #2e7388;
+    transform: translateX(-50%);
+}
+.box-sosanh .text-the > span:after {
+    background: seagreen;
+    right: 0;
+}
+.box-sosanh .text-the .box span.text {
+	font-size: 15px;
+}
+.sosanh .box-sosanh p span.bgwaf:after,
+.box-sosanh .text-the > span.bgw:before
+{
+	background: #cec7c7;
+}
+.box-sosanh .text-the:nth-child(2) .box span:nth-child(2) {
+    width: 74%;
+}
+.box-sosanh .text-the:nth-child(3) .box span:nth-child(2) {
+    width: 53%;
+}
+.box-sosanh .text-the:nth-child(4) .box span:nth-child(2) {
+    width: 30%;
+}
+.box-sosanh .text-the:nth-child(5) .box span:nth-child(2) {
+    width: 68%;
+}
+.box-sosanh .text-the:nth-child(6) .box span:nth-child(2) {
+    width: 48%;
+}
+.box-sosanh .text-the:nth-child(7) .box span:nth-child(2) {
+}
+.box-sosanh .text-the:nth-child(8) .box span:nth-child(2) {
+	width: 65%;
+}
+.box-sosanh .text-the:nth-child(9) .box span:nth-child(2) {
+	width: 81%;
+}
+.box-sosanh .text-the:nth-child(10) .box span:nth-child(2) {
+	width: 59%;
+}
+/*----------end css .sosanh ----------*/
+main .mangxahoi {
+}
+main .mangxahoi .box-anh {
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    width: auto
+}
+main .mangxahoi span {
+	width: 2px;
+    height: 50px;
+    background: #d8d8d8;
+    display: inline-block;
+}
+/*----------end css .mangxahoi ----------*/
+main .bandabiet {
+	background: #ecebeb;
+    padding: 80px 0 40px;
+}
+.bandabiet h2.title {
+	margin: 60px 0 30px;
+    border-top: 2px solid #bfbebe;
+    padding-top: 50px;
+}
+.bandabiet .box-img {
+	padding: 0;
+    text-align: right;
+    margin-top: -25px;
+    margin-right: -10px;
+}
+/*----------end css .bandabiet ----------*/
+main .form-contact {
+	
+}
+.form-contact h2.title {
+	color: white;
+    background: #0067b2;
+    margin: 40px 0;
+    padding: 13px 0;
+}
+.form-contact input {
+    width: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 0;
+    padding: 22px 10px;
+    outline: none;
+}
+.form-contact input:focus {
+    box-shadow: none;
+}
+.form-contact .input-group-text {
+    background: transparent;
+    border-radius: 0;
+    padding: 10px;
+}
+.form-contact form select {
+	width: 83%;
+    text-align: center;
+    background: gray;
+}
+.form-contact form button {
+    position: relative;
+    top: 10px;
+}
+.form-contact form button span {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    color: white;
+    transform: translate(-40%, -50%);
+    font-weight: 900;
+    font-size: 22px;
+    font-style: italic;
+}
+footer{
+	background: #0067b2;
+}
+footer .container .row {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+footer .container .row .img img {
+	width: 80%;
+}
+footer .container .row .phone {
+    display: flex;
+    align-items: center;
+}
+footer .container .row .phone h2 {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    margin-left: 5px;
+}
+footer .container .mangxh p {
+    color: white;
+}
+footer .container .mangxh p a {
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 5px;
+    display: inline-block;
+    color: #0067b2;
+}
+
+/*RWD CSS */
+@media screen and (max-width: 1200px) {
+	header {}
+	header nav {}
+	header nav > a.logoHeader:after {
+		display: none
+	}
+	nav div#navbarNav ul li a {
+		font-size: 13px
+	}
+	button.navbar-toggler {
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 7px;
+	}
+}
+@media screen and (max-width: 992px) {
+    header {
+        background: white;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+    }
+    header nav.navbar-expand-lg {
+        border-bottom: none;
+    }
+    header nav div#navbarNav .navbar-nav {
+        text-align: center;
+        padding: 0 60px;
+    }
+    header nav ul .nav-item {
+        border-bottom: 1px solid #c7c1c1;
+    }
+    header nav > a.logoHeader {padding-left: 70px;}
+    nav .languege {
+        position: absolute;
+        top: 11px;
+        right: 0;
+    }
+	nav div#navbarNav .languege p:last-child {
+		position: absolute;
+	    top: 20px;
+	    right: 0;
+	}
+
+     .ungdungmobile .box-img img {
+        margin: 20px 15px 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    section.cacbox .box {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    .ungdungdesktop .box-left {
+        margin-bottom: 100px
+    }
+    .ungdungdesktop .box-right .row {
+        flex-wrap: nowrap;
+    }
+    /*.ungdungmobile .box-img img {
+        margin: 20px 15px 10px;
+    }*/
+}
+@media screen and (max-width: 576px) {
+    header nav {}
+    header nav .languege .phone {
+        display: none;
+    }
+    section.biquyet .row h3 {
+        margin: 10px;
+    }
+    section.biquyet .row h3:after {
+        display: none
+    }
+    section.cacbox .box {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    section.cacbox .box:last-child {
+        margin-bottom: 0;
+    }
+
+    .form-contact form .d-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    footer .container .row {
+        flex-direction: column;
+    }
+    footer .container .row > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
