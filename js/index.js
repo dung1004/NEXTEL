@@ -1,3 +1,7 @@
+
+// wowjs
+ new WOW().init();
+
 // xu ly xem chi tiet product
 var nutShow = document.querySelectorAll('.products .box-img-text span.xemthem'),
 	nutClose = document.querySelectorAll('.products .chitiet > i'),
