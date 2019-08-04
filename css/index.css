@@ -61,8 +61,8 @@ nav a.logoHeader:after {
     content: '';
     position: absolute;
     bottom: -11px;
-    left: -150px;
-    width: 230%;
+    left: -273px;
+    width: 350%;
     height: 11px;
     background: white;
     transform: skewX(-40deg);
