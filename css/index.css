@@ -1332,10 +1332,14 @@ footer .container .mangxh p a {
     .form-contact form .input-group {
         margin-bottom: 30px;
     }
+    .form-contact h2.title {
+        padding: 10px 30px;
+        font-size: 24px;
+    }
     .sosanh .contact li {
         padding: 6px 20px;
     }
-    .sosanh .contact li:nth-child(2):before,
+    /*.sosanh .contact li:nth-child(2):before,
     .sosanh .contact li:nth-child(3):before,
     .sosanh .contact li:last-child:before {
         left: -10px;
@@ -1346,7 +1350,7 @@ footer .container .mangxh p a {
     .sosanh .box-sosanh p span:nth-child(2):after {
         right: -57px;
     }
-    .sosanh .box-sosanh p {}
+    .sosanh .box-sosanh p {}*/
     p.wow.fadeInUp.box-button.animated {
         position: absolute;
         z-index: -1;
@@ -1361,4 +1365,17 @@ footer .container .mangxh p a {
         margin-bottom: 20px;
         text-align: center;
     }
+    .box-lienhe {
+        right: 0px;
+    }
+    .box-lienhe a img {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 420px) {
+    section.biquyet .row .title h3 {
+        font-size: 11px;
+        position: absolute;
+        left: 0;
+        }
 }
