@@ -228,31 +228,6 @@ section.banner .content p {
 main section.biquyet {}
 
 
-/*section.biquyet .row h3 {
-    background: #4679b6;
-    color: white;
-    font-weight: 700;
-    font-size: 23px;
-    padding: 5px 0;
-    text-align: center;
-    margin: 31px 0 15px -18px;
-    position: relative;
-}*/
-
-
-/*section.biquyet .row h3 {
-    color: white;
-    font-weight: 700;
-    padding: 16px 0;
-    text-align: center;
-    margin: 31px 0 15px -18px;
-    position: relative;
-    left: -23px;
-    top: -1px;
-    transform: skewX(30deg);
-    background-image: linear-gradient(to right, #317bd0, #bdcbe0);
-}*/
-
 section.biquyet .row .title {
     position: relative;
     height: 30px;
@@ -380,33 +355,6 @@ main section.ungdungdesktop {
     box-shadow: 0 2px 7px 2px #0000007a;
 }
 
-
-/*.ungdungdesktop .box-right> div:nth-child(2) {
-    position: absolute;
-    z-index: 100;
-    left: 50%;
-    top: -30px;
-    transform: translateX(-50%);
-    z-index: 1;
-    left: -15%;
-}*/
-
-
-/*.ungdungdesktop .box-right> div:nth-child(2) img {
-    width: auto;
-}*/
-
-
-/*.ungdungdesktop .box-right .row > img {
-    position: absolute;
-    left: 45%;
-    transform: translateX(-50%);
-    z-index: 999;
-    top: -30px;
-    box-shadow: 0 2px 13px black;
-}*/
-
-
 /*----------end css ungdungdesktop-------------*/
 
 main section.ungdungmobile {}
@@ -453,6 +401,7 @@ main section.ungdungmobile {}
 .ungdungmobile .box-img img {
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 
@@ -878,7 +827,10 @@ main .sosanh {}
 
 /*----------end css .sosanh ----------*/
 
-main .mangxahoi {}
+main .mangxahoi img {
+    width: 81px;
+    margin-left: 10px;
+}
 
 main .mangxahoi .box-anh {
     align-items: center;
@@ -909,7 +861,7 @@ main .mangxahoi .owl-carousel .item {
     height: 50px;
     background: #d8d8d8;
     position: absolute;
-    top: 25px;
+    top: 6px;
 }
 
 
@@ -1212,68 +1164,6 @@ footer .container .mangxh p a {
         display: block;
         text-align: right;
     }
-    /*so sanh dich vu*/
-    /*.sosanh .box-sosanh {
-        padding: 0;
-    }
-    .sosanh .box-sosanh .text-the {
-        border-top: 1px solid #b5b1b1;
-        padding: 10px;
-    }
-    .col-md-12.box-sosanh .text-the.ch {
-        background: #e1e1e1;
-    }
-    .sosanh .box-sosanh p {
-        flex: 1;
-    }
-    .sosanh .box-sosanh p span:nth-child(2):before {
-        display: none
-    }
-    .sosanh .box-sosanh p span:nth-child(2),
-    .box-sosanh .text-the > span {
-        background: transparent;
-    }
-    .sosanh .box-sosanh p span.bgwaf:after {
-        background: #f5b731;
-    }
-    .box-sosanh .text-the > span.bgw:before {
-        background: #2e7388;
-    }
-    .sosanh .contact li {
-        padding: 6px 32px;
-    }
-    .sosanh .contact li:nth-child(2):before, .sosanh .contact li:nth-child(3):before, .sosanh .contact li:last-child:before {
-     left: -11px;
- }
- .row.table-sosanh {
-    padding: 0 10px;
-}
-.col-md-12.box-sosanh .text-the {
-    border: 1px solid gray;
-    border-top: 0;
-}
-.col-md-12.box-sosanh.text-the:first-child {
-    border: 0;
-}
-.box-sosanh .text-the > span:after {
-    right: 20px;
-}
-.box-sosanh .text-the > span:before {left: 45%;}
-.box-sosanh .text-the .box span.text {
-    font-size: 15px;
-    position: relative;
-    padding-left: 17px;
-}
-.box-sosanh .text-the .box span.text:after {
-    content: '';
-    position: absolute;
-    top: 7px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 20px;
-    background: #020202a6;
-}*/
     section.bandabiet li {
         position: relative;
         padding-left: 10px;
@@ -1339,18 +1229,6 @@ footer .container .mangxh p a {
     .sosanh .contact li {
         padding: 6px 20px;
     }
-    /*.sosanh .contact li:nth-child(2):before,
-    .sosanh .contact li:nth-child(3):before,
-    .sosanh .contact li:last-child:before {
-        left: -10px;
-    }
-    .box-sosanh .text-the>span:before {
-        left: 54%;
-    }
-    .sosanh .box-sosanh p span:nth-child(2):after {
-        right: -57px;
-    }
-    .sosanh .box-sosanh p {}*/
     p.wow.fadeInUp.box-button.animated {
         position: absolute;
         z-index: -1;
