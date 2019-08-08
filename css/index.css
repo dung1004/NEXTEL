@@ -136,6 +136,7 @@ nav ul .nav-item:after {
     content: '';
     position: absolute;
     bottom: 0;
+    left: 0;
     height: 2px;
     width: 0;
     background: black;
@@ -306,6 +307,7 @@ main section.cacbox {
 
 section.cacbox .box {
     padding: 0 7px;
+    margin-bottom: 30px
 }
 
 section.cacbox .box img {
@@ -316,6 +318,35 @@ section.cacbox .box .box-text {
     background: #d7d7d796;
     color: #504e4e;
     padding: 10px 3px;
+    position: relative;
+
+}
+section.cacbox .box .box-text .box-hidden {
+    background: white;
+    box-shadow: -2px 5px 7px black;
+    padding: 30px;
+    position: absolute;
+    top: -115px;
+    left: 0;
+    font-size: 15px;
+    display: none;
+}
+section.cacbox .box .box-text .box-hidden i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+section.cacbox .box .box-text .box-hidden .chat-mr {
+    background: #0067b2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 14px;
 }
 
 section.cacbox .box h4 {
@@ -396,6 +427,7 @@ main section.ungdungmobile {}
 .ungdungmobile .box-img {
     display: flex;
     justify-content: space-around;
+    align-items: center;    
 }
 
 .ungdungmobile .box-img img {
@@ -429,7 +461,7 @@ section.thietbi .box-img div img {
 main .products {}
 
 .products .box-img-text {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .products .box-img-text .img {
@@ -475,7 +507,7 @@ main .products {}
 
 .products .chitiet {
     position: absolute;
-    top: 0px;
+    top: -22px;
     left: 0;
     background: white;
     box-shadow: -2px 2px 8px black;
@@ -533,6 +565,7 @@ main .tablePrice {}
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .tablePrice .col-lg-3 {
@@ -583,6 +616,12 @@ main .tablePrice {}
     color: #ffffff;
     padding: 60px 0 10px;
 }
+.tablePrice .box-price:hover {
+    /*transform-origin: bottom;*/
+    transform: scaleY(1.1);
+    transform-origin : 50% 100%;
+    transition: 0s ease-in-out;
+}
 
 .tablePrice .box-price.center .price {
     background: #269ade;
@@ -607,7 +646,7 @@ main .tablePrice {}
 }
 
 .tablePrice .box-price.right .price h1 {
-    padding: 20px 0 25px;
+    padding: 12px 0;
 }
 
 .tablePrice .box-price p {
@@ -893,7 +932,9 @@ main .bandabiet {
 
 /*----------end css .bandabiet ----------*/
 
-main .form-contact {}
+main .form-contact {
+    margin-bottom: 70px;
+}
 
 .form-contact h2.title {
     color: white;
@@ -942,11 +983,14 @@ main .form-contact {}
 }
 
 .form-contact form .dropdown-menu.show {
-    width: 60%;
+    min-width: 60% !important;
     left: 20% !important;
-    top: -14px !important;
+    top: 240px !important;
     border-radius: 0;
     padding: 0;
+}
+.bootstrap-select .dropdown-menu li {
+    border-bottom: 1px solid #929597;;
 }
 
 .form-contact .dropdown-toggle::after {
@@ -968,6 +1012,35 @@ main .form-contact {}
 .form-contact .dropdown-item:hover {
     background: #929597;
     color: white
+}
+.form-contact .dropdown-item.active {
+    color: #929597;
+    background: white;
+}
+.form-contact .dropdown.bootstrap-select {
+    flex: 1;
+}
+.form-contact button.btn.dropdown-toggle.btn-light {
+    background: #545b62;
+    color: white;
+    border-radius: 0;
+    padding: 15px;
+    top: 0;
+    border: 2px solid #909497;
+    padding-left: 150px;
+}
+.form-contact form .styleSelect {
+    flex: 1;
+    padding-left: 155px;
+    background: #909497;
+    color: white;
+}
+.form-contact form .styleSelect * {
+    color: #909497;
+    background-color: white;
+}
+.form-contact form .styleSelect option:hover {
+    background-color: red;
 }
 
 .form-contact form .box-button {
@@ -1076,6 +1149,10 @@ footer .container .mangxh p a {
     .sosanh .contact li:last-child:before {
         /*left: -20px;*/
     }
+    .form-contact form .dropdown-menu.show {
+        left: 20% !important;
+        top: 240px !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1115,9 +1192,12 @@ footer .container .mangxh p a {
         margin-top: 30px;
     }
     .form-contact form .dropdown-menu.show {
-        left: 5% !important;
-        top: -14px !important;
+        left: 20% !important;
+        top: -240px !important;
     }
+    .form-contact button.btn.dropdown-toggle.btn-light {
+    padding-left: 80px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1177,9 +1257,14 @@ footer .container .mangxh p a {
         height: 30px;
         background: #929191;
     }
+    .form-contact button.btn.dropdown-toggle.btn-light {
+        padding-left: 180px;
+    }
     .form-contact form .dropdown-menu.show {
         left: 20% !important;
+        top: -250px !important;
         box-shadow: 0 1px 5px black;
+        /*min-width: 80% !important;*/
     }
 }
 
@@ -1203,7 +1288,9 @@ footer .container .mangxh p a {
     }
     .ungdungdesktop .box-right .row>img {
         width: auto !important;
-        ;
+    }
+    .ungdungmobile .box-img img {
+        height: 80%;
     }
     section.cacbox .box {
         margin-bottom: 20px;
