@@ -62,7 +62,11 @@ body {
 }
 
 #wrapper {
+   /* max-width: 100%;
+    max-height: 100%;*/
     overflow-x: hidden;
+   /* scroll-behavior: smooth;
+    overflow-y: scroll;*/
 }
 
 header {
@@ -1258,11 +1262,12 @@ footer .container .mangxh p a {
         background: #929191;
     }
     .form-contact button.btn.dropdown-toggle.btn-light {
-        padding-left: 180px;
+        padding-left: 40%;
     }
     .form-contact form .dropdown-menu.show {
         left: 20% !important;
-        top: -250px !important;
+        /*top: -250px !important;*/
+        top: -20px !important;
         box-shadow: 0 1px 5px black;
         /*min-width: 80% !important;*/
     }
@@ -1335,6 +1340,10 @@ footer .container .mangxh p a {
     }
     .box-lienhe a img {
         width: 60%;
+    }
+
+    .showMenu {
+        /*display: block !important;*/
     }
 }
 @media screen and (max-width: 420px) {

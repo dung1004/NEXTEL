@@ -56,3 +56,10 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+var collapse = document.querySelector('nav .collapse');
+var nutLink = document.querySelectorAll('ul li.nav-item a.nav-link');
+for (var i = 0; i < nutLink.length; i++) {
+	nutLink[i].onclick = function () {
+		collapse.classList.remove('show');
+	}
+} 
